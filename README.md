@@ -1,5 +1,5 @@
 # localnet
-用于获取用户dns解析的localdns所在网络，subnet 信息
+用于获取用户localdns的出口ip，subnet 信息，用于判断用户dns是否设置正确，可能导致CDN调度异常
 
 ## 使用
 
