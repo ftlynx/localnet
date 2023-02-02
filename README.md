@@ -1,5 +1,6 @@
 # localnet
-用于获取用户localdns的出口ip，edns client subnet 信息，用于判断用户dns是否设置正确，可能导致CDN调度异常
+* 用于获取用户localdns出口ip
+* edns client subnet 信息，用于判断用户dns是否设置正确。排查CDN调度问题。
 
 ## 使用
 
