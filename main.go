@@ -77,7 +77,7 @@ func handleDnsRequest(w dns.ResponseWriter, r *dns.Msg) {
 							switch o.(type) {
 							case *dns.EDNS0_SUBNET:
 								subnet = o.String()
-								subnetRR, err := dns.NewRR(fmt.Sprintf("%s 0 IN a %s", q.Name, strings.Split(subnet, "/")[0]))
+								subnetRR, err := dns.NewRR(fmt.Sprintf("%s 1 IN a %s", q.Name, strings.Split(subnet, "/")[0]))
 								if err != nil {
 									log.Printf("%s source %s txt %s your.subnet.dns[%s]", requestId, w.RemoteAddr(), q.Name, err.Error())
 								}
