@@ -35,3 +35,8 @@ dig 1.check.example.org txt
 ```
 
 
+
+## 相同工具
+```
+dig ip.dnspod.net 具有相同的效果
+```
